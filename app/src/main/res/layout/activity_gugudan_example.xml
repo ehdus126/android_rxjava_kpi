@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="단 수를 입력하세요 : "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/inputDanNum"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/playGugudanObservableButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observable을 이용한 구구단 실행"
+            android:background="@color/c_ffb0c4de"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/playGugudanFlatMapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FlatMap을 이용한 구구단 실행"
+            android:background="@color/c_ffb0c4de"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/playGugudanInlineFlatMapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인라인 FlatMap을 이용한 구구단 실행"
+            android:background="@color/c_ffb0c4de"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/playGugudanResultSelectorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="resultSelector을 이용한 구구단 실행"
+            android:background="@color/c_ffb0c4de"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+</layout>
