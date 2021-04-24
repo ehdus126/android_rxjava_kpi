@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(MainActivity.this, R.layout.activity_main);
 
         binding.gugudanButton.setOnClickListener(onClickListener);
+        binding.queryButton.setOnClickListener(onClickListener);
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.gugudanButton:
                     GugudanExampleActivity.start(MainActivity.this);
                     break;
+                case R.id.queryButton:
+                    DataQueryExampleActivity.start(MainActivity.this);
                 default:
                     Log.d(TAG, "onClickListener error.");
                     break;
