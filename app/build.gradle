@@ -44,4 +44,7 @@ dependencies {
 
     // 아파치 커먼즈의 Lang3 Lib
     implementation 'org.apache.commons:commons-lang3:3.6'
+
+    // Okhttp3 Lib
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
 }

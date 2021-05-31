@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.gugudanButton.setOnClickListener(onClickListener);
         binding.queryButton.setOnClickListener(onClickListener);
+        binding.heartBeatButton.setOnClickListener(onClickListener);
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.queryButton:
                     DataQueryExampleActivity.start(MainActivity.this);
+                case R.id.heartBeatButton:
+                    HeartBeatExampleActivity.start(MainActivity.this);
+                    break;
                 default:
                     Log.d(TAG, "onClickListener error.");
                     break;

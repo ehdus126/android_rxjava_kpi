@@ -38,5 +38,15 @@
             android:text="데이터 쿼리 예제"
             android:textColor="@color/black"
             android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/heartBeatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/c_ffb0c4de"
+            android:text="heart Beat 예제"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
     </LinearLayout>
 </layout>

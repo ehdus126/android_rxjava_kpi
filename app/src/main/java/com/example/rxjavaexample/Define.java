@@ -14,4 +14,8 @@ public class Define {
         public static final String CAMERA = "CAMERA";
         public static final String PHONE = "PHONE";
     }
+
+    public static class HeartBeatExample {
+        public static final String SERVER_URL = "https://api.github.com/zen";
+    }
 }
