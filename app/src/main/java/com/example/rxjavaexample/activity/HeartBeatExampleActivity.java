@@ -1,4 +1,4 @@
-package com.example.rxjavaexample;
+package com.example.rxjavaexample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.example.rxjavaexample.Define;
+import com.example.rxjavaexample.R;
 import com.example.rxjavaexample.databinding.ActivityHeartBeatExampleBinding;
 import com.example.rxjavaexample.helper.OkHttpHelper;
 
