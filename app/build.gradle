@@ -42,6 +42,9 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     implementation 'io.reactivex.rxjava3:rxjava:3.0.7'
 
+    // RX Java 수학함수 및 집합함수
+    implementation 'com.github.akarnokd:rxjava2-extensions:0.17.6'
+
     // 아파치 커먼즈의 Lang3 Lib
     implementation 'org.apache.commons:commons-lang3:3.6'
 
