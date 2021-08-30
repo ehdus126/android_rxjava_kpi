@@ -32,15 +32,18 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.core:core:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    implementation 'com.google.android.material:material:1.4.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // Rx Java
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     implementation 'io.reactivex.rxjava3:rxjava:3.0.7'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
 
     // RX Java 수학함수 및 집합함수
     implementation 'com.github.akarnokd:rxjava2-extensions:0.17.6'
@@ -48,6 +51,44 @@ dependencies {
     // 아파치 커먼즈의 Lang3 Lib
     implementation 'org.apache.commons:commons-lang3:3.6'
 
+    // RxLifeCycle Lib
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.0.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.0.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1'
+
+    // Lombok Lib
+    implementation 'org.projectlombok:lombok:1.16.14'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
     // Okhttp3 Lib
     implementation "com.squareup.okhttp3:okhttp:4.9.0"
+
+    // retrofit Lib
+    implementation "com.squareup.retrofit2:retrofit:2.8.1"
+
+    // Gson Data 처리 Lib
+    implementation "com.squareup.retrofit2:converter-gson:2.8.1"
+
+    // 데이터 확인을 위한 로깅을 도와주는 인터셉터 Lib
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    // Cookie 관리를 위한 Lib
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:4.9.0"
+
+    //생명주기를 공유하기 위한 라이브러리
+    implementation "androidx.appcompat:appcompat:1.2.0"
+
+    //LiveData를 사용하기 위한 라이브러리
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.1"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    // stetho 디버깅
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 }

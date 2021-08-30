@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         binding.queryButton.setOnClickListener(onClickListener);
         binding.heartBeatButton.setOnClickListener(onClickListener);
         binding.electricBillsButton.setOnClickListener(onClickListener);
+        binding.searchButton.setOnClickListener(onClickListener);
+        binding.recyclerButton.setOnClickListener(onClickListener);
 
         /**
          * 수학함수
@@ -74,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.electricBillsButton:
                 ElectricBillsActivity.start(MainActivity.this);
+                break;
+            case R.id.searchButton:
+                SearchActivity.start(MainActivity.this);
+                break;
+            case R.id.recyclerButton:
+                ListExampleActivity.start(MainActivity.this);
                 break;
             default:
                 Log.d(TAG, "onClickListener error.");

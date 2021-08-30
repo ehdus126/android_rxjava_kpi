@@ -58,5 +58,26 @@
             android:text="전기 요금 계산 예제"
             android:textColor="@color/black"
             android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/c_ffb0c4de"
+            android:text="추천 검색어 예제"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/recyclerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/c_ffb0c4de"
+            android:text="RecyclerView 를 이용한 리스트 예제"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
     </LinearLayout>
 </layout>

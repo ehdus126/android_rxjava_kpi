@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@color/c_ffb0c4de"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lines="2"
+            tools:text="예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다. 예제입니다."
+            android:ellipsize="end" />
+    </LinearLayout>
+</layout>
