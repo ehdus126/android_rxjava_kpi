@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">RxJavaExample</string>
+
+    <string name="inbox_title">What\'s New</string>
+    <string name="inbox_no_data">새로운 메시지가 없습니다.</string>
+
+    <string name="other_inbox_all_menu">전체</string>
+    <string name="other_inbox_title_notice">공지사항</string>
+    <string name="other_inbox_title_event">이벤트&amp;뉴스</string>
+
+    <string name="inbox_category_all">전체</string>
+    <string name="inbox_category_whats_new">전체</string>
+    <string name="inbox_category_notice">공지사항</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 </resources>

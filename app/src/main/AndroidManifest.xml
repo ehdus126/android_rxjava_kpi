@@ -25,6 +25,8 @@
         <activity android:name=".activity.ElectricBillsActivity" />
         <activity android:name=".activity.SearchActivity" />
         <activity android:name=".activity.ListExampleActivity" />
+        <activity android:name=".activity.InboxActivity" />
+        <activity android:name=".activity.InboxDetailWebActivity" />
     </application>
 
 </manifest>

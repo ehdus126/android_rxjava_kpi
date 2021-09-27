@@ -79,5 +79,15 @@
             android:textColor="@color/black"
             android:textSize="15sp" />
 
+        <Button
+            android:id="@+id/inboxButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/c_ffb0c4de"
+            android:text="Inbox 예제"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
     </LinearLayout>
 </layout>

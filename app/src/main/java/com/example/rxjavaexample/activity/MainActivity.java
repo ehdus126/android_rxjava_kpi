@@ -10,6 +10,7 @@ import androidx.databinding.DataBindingUtil;
 
 import com.example.rxjavaexample.R;
 import com.example.rxjavaexample.databinding.ActivityMainBinding;
+import com.example.rxjavaexample.viewmodel.InboxViewModel;
 
 import hu.akarnokd.rxjava2.math.MathFlowable;
 import io.reactivex.Flowable;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         binding.electricBillsButton.setOnClickListener(onClickListener);
         binding.searchButton.setOnClickListener(onClickListener);
         binding.recyclerButton.setOnClickListener(onClickListener);
+        binding.inboxButton.setOnClickListener(onClickListener);
 
         /**
          * 수학함수
@@ -82,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.recyclerButton:
                 ListExampleActivity.start(MainActivity.this);
+                break;
+            case R.id.inboxButton:
+                InboxActivity.ArgInfo argInfo = new InboxActivity.ArgInfo();
+                argInfo.eCategoryType = InboxViewModel.eCategoryType.ALL;
+                InboxActivity.start(MainActivity.this, argInfo);
                 break;
             default:
                 Log.d(TAG, "onClickListener error.");

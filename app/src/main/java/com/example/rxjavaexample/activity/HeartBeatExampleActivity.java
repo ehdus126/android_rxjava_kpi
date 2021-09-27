@@ -47,8 +47,17 @@ public class HeartBeatExampleActivity extends AppCompatActivity {
                 .map(OkHttpHelper::get) // 서버에 저장된 URL 정보를 얻기 위해 실행
                 .repeat()
                 .subscribe(res -> Log.i(TAG, "Ping Result : " + res));
+        sleep(10000);
 
         // timer() 함수 한 번 호출하면 종료되는데 계속 반복되는 이유? repeat() 함수 때문에
         // repeat() : 동작이 한 번 끝난 다음 다시 구독하는 방식으로 동작
+    }
+
+    private void sleep(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

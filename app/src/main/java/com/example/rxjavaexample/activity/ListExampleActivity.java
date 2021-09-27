@@ -82,8 +82,6 @@ public class ListExampleActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // 생명주기에 따라 Disposable 구독 취소
-        disposeCompositeDisposable();
     }
 
     @Override
@@ -146,13 +144,6 @@ public class ListExampleActivity extends BaseActivity {
 
     private void showToast(String text) {
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
-
-    public static class WebViewJavaScriptInterface {
-        @JavascriptInterface
-        public void getDouble() {
-            
-        }
     }
 
     /**

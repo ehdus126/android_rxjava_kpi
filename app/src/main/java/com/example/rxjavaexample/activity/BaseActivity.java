@@ -32,6 +32,10 @@ public class BaseActivity extends RxAppCompatActivity implements CompositeDispos
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        // 생명주기에 따라 Disposable 구독 취소
+        if (compositeDisposable != null) {
+            disposeCompositeDisposable();
+        }
     }
 
     @Override
